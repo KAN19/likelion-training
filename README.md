@@ -142,4 +142,18 @@
 }
 ```
 
+## Logger & AOP
+### logging when method getDepartmentDto executed successfully
+```
+2022-09-07 23:18:53 WARN  [http-nio-9081-exec-5] c.r.n.c.EmployeeConfig - before employeeDto method
+2022-09-07 23:18:53 INFO  [http-nio-9081-exec-5] c.r.n.s.i.EmployeeServiceImpl - Info ne:EmployeeDto(employeeId=null, name=kiet nguyen, birthDate=2001-01-01, gender=nam, email=nguyenkiet@gmail.com)
+2022-09-07 23:18:53 WARN  [http-nio-9081-exec-5] c.r.n.c.EmployeeConfig - After employeeDto method
+```
+
+### logging when method getDepartmentDto executed unsuccessfully
+```
+2022-09-07 23:22:00 WARN  [http-nio-9081-exec-2] c.r.n.c.EmployeeConfig - before employeeDto method
+2022-09-07 23:22:00 WARN  [http-nio-9081-exec-2] c.r.n.c.EmployeeConfig - after throwing employeeDto method!!
+2022-09-07 23:22:00 WARN  [http-nio-9081-exec-2] c.r.n.c.EmployeeConfig - After employeeDto method
+```
 
